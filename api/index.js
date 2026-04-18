@@ -1,8 +1,8 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
-const { extractFeatures } = require("./engine/featureExtractor");
-const { ThreatDetectionEngine } = require("./engine/riskScorer");
+const { extractFeatures } = require("../src/engine/featureExtractor");
+const { ThreatDetectionEngine } = require("../src/engine/riskScorer");
 const { runScenario } = require("../simulator/scenarioRunner");
 
 const PORT = Number(process.env.PORT || 3000);
